@@ -5,9 +5,10 @@ name: Build
 on:
   # mainブランチにpushされたときにビルドを実行
   push:
-    - main
+    branches:
+      - main
 
-# ワークフローが実行するジョブの一覧
+      # ワークフローが実行するジョブの一覧
 jobs:
   # ビルドを行うジョブ
   build:
