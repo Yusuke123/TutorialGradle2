@@ -11,7 +11,7 @@ jobs:
   # ビルドを行うジョブ
   build:
     # 最新のUbuntuでワークフローを実行
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     # ジョブが行うステップの一覧
     steps:
       # ソースコードをGitからチェックアウト
