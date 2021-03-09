@@ -3,11 +3,12 @@ name: Build
 
 # どういったイベントが発生したときにワークフローを実行するかを指定。
 on:
-  # ここでは変更がpushされたときをイベントとして指定。
-  - pull_request
-  - push
+  # mainブランチにpushされたときにビルドを実行
+  push:
+    branches:
+      - master
 
-# ワークフローが実行するジョブの一覧
+
 jobs:
   # ビルドを行うジョブ
   build:
