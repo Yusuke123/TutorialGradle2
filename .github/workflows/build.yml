@@ -6,7 +6,7 @@ on:
   # mainブランチにpushされたときにビルドを実行
   push:
     branches:
-      - main
+      - master
 
 
 jobs:
